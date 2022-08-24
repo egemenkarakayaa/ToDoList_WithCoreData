@@ -49,11 +49,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-            self?.createItem(name: text )
+            self?.createItem(name: text)
             
         }))
         
-        present(alert, animated: true )
+        present(alert, animated: true)
     }
     
     
@@ -145,6 +145,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         do {
             try context.save()
+            getAllItems()
         }
         catch {
             // error
@@ -157,6 +158,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         do {
             try context.save()
+            getAllItems()
         }
         catch {
             // error

@@ -11,5 +11,6 @@ import CoreData
 
 @objc(ToDoListItem)
 public class ToDoListItem: NSManagedObject {
+    
 
 }
